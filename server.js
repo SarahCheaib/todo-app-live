@@ -17,8 +17,9 @@ var port = process.env.PORT || 8080;
 // Here we find an appropriate database to connect to, defaulting to
 // localhost if we don't find one.
 var uristring =
-    process.env.MONGODB_URI ||
-    'mongodb://127.0.0.1/todo_app';
+    process.env.PORT ?
+        "mongodb://todo-rma-user:MangoMango1@ds139459.mlab.com:39459/todo-db" :
+        'mongodb://127.0.0.1/todo_app';
 
 
 console.log('Trying to make express app listen to port: ' + port + " ...");
@@ -74,7 +75,6 @@ app.get('/api/tasks/:id', function (request, response) {
         }
     });
 });
-
 
 
 //add task items to database
