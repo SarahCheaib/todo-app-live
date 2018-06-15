@@ -2,7 +2,7 @@
 
 ##Installation
 
-```bash
+```
 npm install
 ```
 
@@ -13,13 +13,13 @@ npm install
 After installing start mongodb service by defining a custom db directory path (uses /data/db/ as default but has permission restrictions on mac osx)
 
 
-```bash
+```
 mongod --dbpath /Users/[user]/data/db
 ```
 
 ####Start server that we create in server.js by using express and mongoose
 
-```bash
+```
 npm start
 ```
 
@@ -36,14 +36,14 @@ use homebrew on osx to install mongodb at least
 
 #### INSTALL NODE / NPM WITH BREW
 
-```bash
+```
 brew install node
 ```
 
 --> will install NPM too
 
 #### INSTALL MONGODB WITH BREW
-```bash
+```shell
 brew install mongodb
 ```
 
